@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class="container1">
+        <h3>Student Detail Entry</h3>
+        <form action="/" method="get" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div class="row">
+                <div class="col-1">
+                    <label for="id">Student ID:</label>  
+                </div>
+                <div class="col-2">
+                    <input type="text" name="stdid" id="id" placeholder="STUDENT ID">
+                    <small></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="name">Student Name:*</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="stdtname" id="name" placeholder="STUDENT NAME">
+                    <small></small>
+                </div>
+            </div>
+            <br>
+            <div><input id="button" type="submit" value="ADD"></div>
+             
+        </form>
+    </div> <hr>
+    <div class="container2 list"><h3>Student List</h3>
+    <table id="stdList">
+        <thead>
+            <tr>
+                <th>Std_ID</th>
+                <th>Std_Name</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

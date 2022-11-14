@@ -1,0 +1,95 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container1{
+    width: 50%;
+    height: 222px;
+    padding: 10px;
+    background:linear-gradient(rgba(205, 203, 203, 0.6), rgba(220, 217, 217, 0.6)), url(bob.jpeg);
+    background-size: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 4px rgb(161, 161, 179);
+}
+input{
+    width: 90%;
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-shadow: 4px 4px grey;
+}
+input[type=submit]{
+    width: 20%;
+    background-color: #00ea79;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    float: left;
+}
+
+.col-2.error input{
+    border: 2px solid red;
+}
+.col-2.success input{
+    border: 2px solid #4BB543;
+}
+.col-2 small{
+    color: red;
+}
+
+::placeholder{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.col-1{
+    float: left;
+    width: 30%;
+    margin-top: 5px;
+}
+.col-2{
+    float: left;
+    width: 70%;
+    margin-top: 5px;
+}
+.row:after{
+    content:'';
+    display: table;
+    clear: both;
+}
+#button-1{
+    background-color: rgb(241,44,44);
+    padding-right: 10px;
+}
+#button-2{
+    background-color: rgb(90,241,44);
+    padding-right: 10px;
+}
+table{
+    border-collapse: collapse;
+
+}
+td{
+    border:1px solid #dddddd;
+    padding-right: 10px;
+}
+.hide{
+    display: none;
+}
+a{
+    cursor: pointer;
+    color: rgb(63, 6, 252);
+    margin-right: 4px;
+}
+
+/* Responsive layout when the screen size is 1100 at max */
+@media  screen and (max-width:1100px){
+    .container1{width: 60%; margin-top: 0;}
+    .col-1{width: 30%;}
+    .col-2{width: 60%;}
+
+/* Responsive layout when the screen size is 800 at max */
+@media screen and (max-width: 800px){
+    .container1{width: 80%; margin-top: 0; height: 250px;}
+    .col-1, .col-2{width: 100%;}
+}
+}
